@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  outline-offset: 5px;
+}
+
+html {
+  scroll-padding-top: 60px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+}
+
+main:not(.home-page) {
+  @apply min-h-screen bg-brand-green text-brand-black pt-32
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold;
+}
+
+h2 {
+  @apply text-2xl lg:text-3xl 2xl:text-4xl font-semibold;
+}
+
+h3 {
+  @apply text-xl lg:text-2xl 2xl:text-3xl font-medium;
+}
+
+p {
+  @apply text-lg sm:text-xl py-1;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+[class^="btn-"] {
+  @apply py-2 px-8 rounded transition-all duration-300 border-2 text-xl;
+}
+
+.btn-1 {
+  @apply bg-brand-yellow text-brand-black border-brand-yellow hover:bg-brand-black hover:text-brand-yellow;
+}
+
+.btn-2 {
+  @apply bg-brand-black text-brand-yellow border-brand-black hover:bg-brand-yellow hover:text-brand-black;
+}
+
+header nav,
+header nav a {
+  @apply transition-all;
+}
+
+ul.nav-tabs a.router-link-exact-active {
+  color: #fff8dc;
+}
+ul.nav-tabs a.router-link-exact-active:after {
+  width: 100%;
+}
+
+ul.nav-tabs a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff8dc;
+  transition: width 0.3s;
+}
+
+ul.nav-tabs a:hover:after {
+  width: 100%;
+}
+
+.skip-content-link {
+  background: #acbc90;
+  color: #081107;
+  height: 30px;
+  left: 30%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  z-index: 51;
+}
+
+.skip-content-link:focus {
+  transform: translateY(0%);
+}
+
+/* burger animation */
+button.navbar-toggler span {
+  transform-origin: right center;
+  -webkit-transform-origin: right center;
+}
+button.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(-2.5px, -2px) rotate(-40deg);
+  -webkit-transform: translate(-2.5px, -2px) rotate(-40deg);
+  width: 20px;
+}
+button.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  width: 0;
+}
+button.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(-2px, 1px) rotate(40deg);
+  -webkit-transform: translate(-2px, 1px) rotate(40deg);
+  width: 20px;
+}
+button.navbar-toggler:focus:not(:focus-visible) {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+/* burger animation end */
+
+/* form */
+
+/* .ada-form label {
+  @apply mb-1 text-base sm:text-lg lg:text-xl my-1;
+}
+
+.ada-form label span {
+  @apply text-red-900;
+}
+
+.ada-form :is(input, select, textarea) {
+  @apply text-black bg-brand-yellow rounded-md mb-3 p-2 block w-full mt-1 border-2 border-brand-black;
+} */
+
+/* Change autocomplete styles in WebKit */
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid #081107;
+  -webkit-text-fill-color: #081107;
+  -webkit-box-shadow: 0 0 0px 1000px #FFF8DC inset;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: #081107;
+};
+
+.ada-form textarea {
+  @apply min-h-20;
+  position: relative;
+} */
+
+/* form end */

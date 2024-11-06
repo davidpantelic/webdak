@@ -1,0 +1,20 @@
+{
+  "name": "webdak",
+  "short_name": "webdak",
+  "description": "Webdak - moderna web resenja.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081107",
+  "theme_color": "#acbc90",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "lang": "sr",
+  "scope": "/",
+  "orientation": "portrait",
+  "prefer_related_applications": false
+}
