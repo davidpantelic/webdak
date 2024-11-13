@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main id="main-content">
     <section class="">
       <h1>Webdak</h1>
     </section>

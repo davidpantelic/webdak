@@ -17,11 +17,11 @@ export default defineNuxtConfig({
         lang: 'sr',
       },
       meta: [
-        { property: 'og:image', content: '/social_share.jpg' },
+        { property: 'og:image', content: '/social_share_1.jpg' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: '%pageTitle %separator %siteName' },
-        { name: 'twitter:description', content: 'Webdak - moderna web resenja.' },
-        { name: 'twitter:image', content: '/social_share.jpg' },
+        { name: 'twitter:description', content: 'Webdak - moderna i pristupačna web rešenja.' },
+        { name: 'twitter:image', content: '/social_share_1.jpg' },
         { name: 'msapplication-TileColor', content: '#081107' },
         { name: 'theme-color', content: '#081107' },
       ],
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#acbc90' },
+        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#99cc66' },
       ],
       templateParams: {
         separator: '-'
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://webdak.rs',
     name: 'Webdak',
-    description: 'Webdak - moderna web resenja',
+    description: 'Webdak - moderna i pristupačna web rešenja',
     defaultLocale: 'sr',
   },
   sitemap: {
@@ -56,7 +56,7 @@ export default defineNuxtConfig({
       type: 'Company',
       name: 'Webdak',
       url: 'https://webdak.rs',
-      logo: 'https://webdak.rs/webdak_logo.png'
+      logo: 'https://webdak.rs/logo_10.png'
     }
   },
   robots: {
@@ -78,10 +78,12 @@ export default defineNuxtConfig({
       // }
     },
   },
+  image: {
+    dir: 'assets/images',
+  },
   googleFonts: {
     families: {
-      SUSE: [100, 200, 300, 400, 500, 600, 700, 800],
-      Inter: [100, 200, 300, 400, 500, 600, 700, 800],
+      Ubuntu: [300, 400, 500, 600, 700],
     },
     display: 'swap',
     prefetch: true,
@@ -104,11 +106,11 @@ export default defineNuxtConfig({
             suse: ['SUSE', 'sans-serif']
           },
           colors: {
-            'brand-black': '#081107',
-            'brand-grey-1': '#4A4A4A',
-            'brand-grey-2': '#D3D3D3',
-            'brand-green': '#acbc90',
-            'brand-yellow': '#FFF8DC'
+            'brand-black': '#0F1C0D',
+            'brand-green-dark': '#254222',
+            'brand-green-light': '#99cc66',
+            'brand-cream': '#ece2b1',
+            'brand-sky': '#cae4c5'
           },
           transitionDuration: {
             DEFAULT: '500ms'

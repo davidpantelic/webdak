@@ -1,8 +1,8 @@
 <template>
     <footer>
-    <div class="bg-brand-black text-brand-yellow w-full flex flex-wrap gap-5 justify-center items-center p-5 text-center">
+    <div class="bg-brand-black text-brand-cream w-full flex flex-wrap gap-5 justify-center items-center p-5 text-center">
       <UTooltip text="Ovaj veb-sajt je pristupačan svima." class="w-20 order-2" :popper="{ placement: 'top' }">
-        <NuxtImg class="w-20 h-20" src="/accessibility_icon_yellow.png" alt="Pristupačnost bedž" />
+        <NuxtImg class="w-20 h-20" src="logo/accessibility_badge_4.png" alt="Pristupačnost bedž" />
       </UTooltip>
       <div class="w-full md:w-auto md:order-2 order-1">
         <p>Copyright &copy; {{ getCurrentYear }} Webdak. Sva prava zadržana.</p>
@@ -14,7 +14,7 @@
         <p>Izrada veb-sajtova - <a href="mailto:dpdavid156@gmail.com" class="hover:underline">Webdak</a></p>
       </div>
       <UTooltip text="Webdak Izrada veb-sajtova" class="w-20 rounded-full hover:rotate-6 transition-all order-3" :popper="{ placement: 'top' }">
-        <NuxtImg class="w-20 h-20" src="/webdak_logo_small.png" alt="Webdak Moderna Web Rešenja" />
+        <NuxtImg class="w-20 h-20" src="logo/logo_10.png" alt="Webdak Moderna Web Rešenja" />
       </UTooltip>
     </div>
   </footer>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+font-family: "Ubuntu", sans-serif;
+*/
+
 * {
   outline-offset: 5px;
 }
@@ -12,12 +16,12 @@ html {
 }
 
 body {
-  font-family: "SUSE", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-optical-sizing: auto;
 }
 
 main:not(.home-page) {
-  @apply min-h-screen bg-brand-green text-brand-black pt-32
+  @apply min-h-screen bg-brand-sky text-brand-black pt-32
 }
 
 h1 {
@@ -46,11 +50,11 @@ a {
 }
 
 .btn-1 {
-  @apply bg-brand-yellow text-brand-black border-brand-yellow hover:bg-brand-black hover:text-brand-yellow;
+  @apply bg-brand-cream text-brand-black border-brand-cream hover:bg-brand-black hover:text-brand-cream;
 }
 
 .btn-2 {
-  @apply bg-brand-black text-brand-yellow border-brand-black hover:bg-brand-yellow hover:text-brand-black;
+  @apply bg-brand-black text-brand-cream border-brand-black hover:bg-brand-cream hover:text-brand-black;
 }
 
 header nav,
