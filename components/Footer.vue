@@ -13,7 +13,7 @@
         </div>
         <p>Izrada veb-sajtova - <a href="mailto:dpdavid156@gmail.com" class="hover:underline">Webdak</a></p>
       </div>
-      <UTooltip text="Webdak Izrada veb-sajtova" class="w-20 rounded-full hover:rotate-6 transition-all order-3" :popper="{ placement: 'top' }">
+      <UTooltip text="Webdak Izrada veb-sajtova" class="w-20 rounded-full hover:cursor-pointer transition-all order-3" :popper="{ placement: 'top' }">
         <NuxtImg class="w-20 h-20" src="logo/logo_10.png" alt="Webdak Moderna Web Rešenja" />
       </UTooltip>
     </div>

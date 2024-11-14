@@ -21,19 +21,23 @@ body {
 }
 
 main:not(.home-page) {
-  @apply min-h-screen bg-brand-sky text-brand-black pt-32
+  @apply min-h-screen bg-brand-sky text-brand-black
 }
 
 h1 {
-  @apply text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold;
+  @apply text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mt-5 mb-3;
 }
 
 h2 {
-  @apply text-2xl lg:text-3xl 2xl:text-4xl font-semibold;
+  @apply text-2xl lg:text-3xl 2xl:text-4xl font-semibold mt-5 mb-3;
 }
 
 h3 {
-  @apply text-xl lg:text-2xl 2xl:text-3xl font-medium;
+  @apply text-xl lg:text-2xl 2xl:text-3xl font-medium mt-5 mb-3;
+}
+
+h4 {
+  @apply text-lg lg:text-xl 2xl:text-2xl font-normal mt-5 mb-3;
 }
 
 p {
@@ -57,29 +61,54 @@ a {
   @apply bg-brand-black text-brand-cream border-brand-black hover:bg-brand-cream hover:text-brand-black;
 }
 
+.btn-3 {
+  @apply bg-brand-black text-brand-cream border-brand-black hover:bg-transparent hover:text-brand-black;
+}
+
 header nav,
 header nav a {
   @apply transition-all;
 }
 
 ul.nav-tabs a.router-link-exact-active {
-  color: #fff8dc;
+  @apply text-brand-white;
 }
 ul.nav-tabs a.router-link-exact-active:after {
   width: 100%;
+  left: 0;
 }
-
+/* 
 ul.nav-tabs a:after {
   content: "";
   display: block;
   width: 0;
   height: 2px;
-  background: #fff8dc;
   transition: width 0.3s;
+  @apply bg-brand-cream;
 }
 
 ul.nav-tabs a:hover:after {
   width: 100%;
+} */
+
+ul.nav-tabs a {
+  position: relative;
+}
+
+ul.nav-tabs a:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0px;
+  height: 2px;
+  transition: all 0.45s;
+  @apply bg-brand-white;
+}
+
+ul.nav-tabs a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .skip-content-link {
@@ -160,3 +189,7 @@ select:-webkit-autofill:focus {
 } */
 
 /* form end */
+
+.cover-section {
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+}

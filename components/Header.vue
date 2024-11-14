@@ -3,13 +3,13 @@
   <header>
     <nav :class="[isScrolling ? 'py-4' : 'py-5 bg-opacity-90']" class="bg-brand-black text-white fixed top-0 w-full flex justify-end px-2 md:px-6 lg:px-10 z-50">
 
-      <button @click="homepageTop" class="absolute h-24 sm:h-32 top-2 left-3 hover:scale-105 z-10 transition-all">
+      <button @click="homepageTop" class="absolute h-24 sm:h-32 top-2 left-3 hover:rotate-6 z-10 transition-all">
         <NuxtImg src="/logo/logo_10.png" alt="Webdak" :class="[isScrolling ? 'scale-90' : 'scale-100']" class="inline mr-3 transition-all w-28 sm:w-32 h-28 sm:h-32 origin-top" />
       </button>
 
       <ul class="nav-tabs items-center gap-5 hidden lg:flex mr-5">
         <li v-for="tab in navTabs" :key="tab.name">
-          <a :href="tab.path" class="text-xl text-brand-cream">{{ tab.name }}</a>
+          <NuxtLink :to="tab.path" class="text-xl text-brand-cream hover:text-brand-white">{{ tab.name }}</NuxtLink>
         </li>
       </ul>
 
@@ -42,11 +42,19 @@
 const navTabs = computed(() => [
   {
     name: 'Početna',
-    path: '#',
+    path: '/',
+  },
+  {
+    name: 'Pristupačnost',
+    path: 'pristupacnost',
+  },
+  {
+    name: 'SEO',
+    path: 'seo',
   },
   {
     name: 'Kontakt',
-    path: '#kontakt',
+    path: 'kontakt',
   },
 ]);
 

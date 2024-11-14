@@ -32,11 +32,11 @@ const socIcons = computed(() => [
     target: '_self',
     text: 'Kontakt telefon'
   },
-  {
-    name: 'hugeicons:location-01',
-    path: 'https://maps.app.goo.gl/S8mzyqiAnDoXDYcHA',
-    target: '_blank',
-    text: 'Lokacija na Google Maps - Dragijevica bb, 14253 Osečina, Srbija - otvara se u novom tabu'
-  },
+  // {
+  //   name: 'hugeicons:location-01',
+  //   path: 'https://maps.app.goo.gl/S8mzyqiAnDoXDYcHA',
+  //   target: '_blank',
+  //   text: 'Lokacija na Google Maps - Dragijevica bb, 14253 Osečina, Srbija - otvara se u novom tabu'
+  // },
 ]);
 </script>

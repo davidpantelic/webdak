@@ -110,7 +110,8 @@ export default defineNuxtConfig({
             'brand-green-dark': '#254222',
             'brand-green-light': '#99cc66',
             'brand-cream': '#ece2b1',
-            'brand-sky': '#cae4c5'
+            'brand-sky': '#cae4c5',
+            'brand-white': '#fff9e9',
           },
           transitionDuration: {
             DEFAULT: '500ms'
